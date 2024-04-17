@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import '@/assets/styles/globals.css';
 import Navbar from '@/components/Navbar';
 import Providers from './providers';
+import Footer from '../components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,12 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex min-h-screen flex-col`}>
         <Providers>
-          <header>
-            <Navbar />
-          </header>
-          <main>{children}</main>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>
