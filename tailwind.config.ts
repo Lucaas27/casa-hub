@@ -18,6 +18,8 @@ const config: Config = {
         'popover-foreground': 'hsl(var(--popover-foreground))',
         primary: 'hsl(var(--primary))',
         'primary-foreground': 'hsl(var(--primary-foreground))',
+        'primary-light': 'hsl(var(--primary-light))',
+        'primary-light-foreground': 'hsl(var(--primary-light-foreground))',
         secondary: 'hsl(var(--secondary))',
         'secondary-foreground': 'hsl(var(--secondary-foreground))',
         muted: 'hsl(var(--muted))',

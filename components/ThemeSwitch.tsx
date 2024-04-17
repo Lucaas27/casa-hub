@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 
-export default function ThemeSwitch() {
+const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
@@ -25,10 +25,12 @@ export default function ThemeSwitch() {
     );
 
   if (resolvedTheme === 'dark') {
-    return <IoSunnySharp onClick={() => setTheme('light')} className="h-6 w-6 cursor-pointer text-white" />;
+    return <IoSunnySharp onClick={() => setTheme('light')} className=" ml-2 h-6 w-6 cursor-pointer text-white" />;
   }
 
   if (resolvedTheme === 'light') {
-    return <IoMoonSharp onClick={() => setTheme('dark')} className="h-6 w-6 cursor-pointer text-black" />;
+    return <IoMoonSharp onClick={() => setTheme('dark')} className=" ml-2 h-6 w-6 cursor-pointer text-black" />;
   }
-}
+};
+
+export default ThemeSwitch;

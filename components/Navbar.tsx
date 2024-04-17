@@ -25,7 +25,7 @@ const Navbar = () => {
             <button
               type="button"
               id="mobile-dropdown-button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-primary-foreground hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-primary-foreground hover:bg-secondary hover:text-secondary-foreground focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ring"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => setMobileMenuOpen((prevState) => !prevState)}
@@ -71,18 +71,18 @@ const Navbar = () => {
 
           {/* <!-- Right Side Menu (Logged Out) --> */}
           {!isLoggedIn && (
-            <div className="hidden md:ml-4 md:block ">
-              <button className="flex items-center justify-center rounded-md bg-secondary px-2 py-2 text-secondary-foreground hover:bg-accent hover:text-accent-foreground">
+            <div className="mr-4 flex items-center justify-center gap-2 md:ml-4">
+              <button className="hidden items-center justify-center rounded-md bg-secondary px-2 py-2 text-secondary-foreground hover:bg-secondary hover:text-secondary-foreground md:flex">
                 <FaGoogle className="fa-brands fa-google mr-2 text-secondary-foreground" />
                 <span className="text-sm">Login/Register</span>
               </button>
+              <ThemeSwitch />
             </div>
           )}
 
           {/* <!-- Right Side Menu (Logged In) --> */}
           {isLoggedIn && (
             <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
-              <ThemeSwitch />
               <Link href="/messages" className="group relative">
                 <button
                   type="button"
@@ -112,7 +112,6 @@ const Navbar = () => {
                     <FaUserCircle className="h-8 w-8" />
                   </button>
                 </div>
-
                 {/* <!-- Profile dropdown --> */}
                 {profileMenuOpen && (
                   <div
@@ -152,6 +151,7 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
+              <ThemeSwitch />
             </div>
           )}
         </div>
@@ -188,7 +188,7 @@ const Navbar = () => {
               </Link>
             )}
             {!isLoggedIn && (
-              <button className="mx-auto flex items-center justify-center rounded-md bg-secondary px-2 py-2 text-secondary-foreground hover:bg-accent hover:text-accent-foreground">
+              <button className="mx-auto flex items-center justify-center rounded-md bg-secondary px-2 py-2 text-secondary-foreground hover:bg-secondary hover:text-secondary-foreground">
                 <FaGoogle className="fa-brands fa-google mr-2 text-secondary-foreground" />
                 <span className="text-sm">Login/Register</span>
               </button>

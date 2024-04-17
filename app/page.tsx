@@ -1,9 +1,11 @@
-import Image from 'next/image';
+import Hero from '@/components/Hero';
+import InfoCards from '@/components/InfoCards';
 
 export default function Home() {
   return (
     <>
-      <p>Home</p>
+      <Hero />
+      <InfoCards />
     </>
   );
 }
