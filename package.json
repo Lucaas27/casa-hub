@@ -28,6 +28,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13",
+    "react-spinners": "^0.13.8",
     "simple-git-hooks": "^2.11.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
