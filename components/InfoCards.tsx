@@ -20,8 +20,8 @@ const InfoCards = () => {
           buttonInfo={{
             link: '/properties/add',
             text: 'Add Property',
-            bgColor: 'bg-accent hover:bg-secondary',
-            txtColor: 'text-accent-foreground hover:text-secondary-foreground',
+            bgColor: 'bg-accent hover:bg-primary',
+            txtColor: 'text-accent-foreground hover:text-primary-foreground',
           }}
         >
           List your properties and reach potential tenants. Rent as an airbnb or long term.
