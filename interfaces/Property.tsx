@@ -10,7 +10,7 @@ export default interface IProperty {
   description: string;
   location: ILocation;
   beds: number;
-  baths: number;
+  toilets: number;
   square_feet: number;
   amenities: string[];
   rates: IRates;

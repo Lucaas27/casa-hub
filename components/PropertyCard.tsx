@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import pic from '@/public/images/properties/a1.jpg';
-import IProperty from '../interfaces/Property';
+import IProperty from '@/interfaces/Property';
 import { IoBed, IoLocation } from 'react-icons/io5';
 import { GiBathtub } from 'react-icons/gi';
 import { FaRulerCombined } from 'react-icons/fa';
@@ -59,12 +59,32 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         <div className="mb-4 flex items-end justify-center gap-4 text-muted-foreground">
           <p>
             <IoBed />
-            {property.beds}
-            <span className="md:hidden lg:inline"> Bed(s)</span>
+            {property.beds > 1 ? (
+              <>
+                {property.beds}
+                <span className="md:hidden lg:inline"> Beds</span>
+              </>
+            ) : (
+              <>
+                {property.beds}
+                <span className="md:hidden lg:inline"> Bed</span>
+              </>
+            )}
           </p>
           <p>
-            <GiBathtub /> {property.baths}
-            <span className="md:hidden lg:inline"> Bath(s)</span>
+            <GiBathtub />
+            {property.toilets > 1 ? (
+              <>
+                {property.toilets}
+                <span className="md:hidden lg:inline"> Toilets</span>
+              </>
+            ) : (
+              <>
+                {property.toilets}
+                <span className="md:hidden lg:inline"> Toilet</span>
+              </>
+            )}
+            {/* <span className="md:hidden lg:inline"> Toilet(s)</span> */}
           </p>
           <p>
             <FaRulerCombined />
@@ -98,9 +118,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         <div className="mb-4 flex flex-col items-center justify-between text-secondary-foreground lg:flex-row">
           <div className="mb-4 flex gap-2 align-middle lg:mb-0">
             <IoLocation className="text-lg text-destructive" />
-            <span>
-              {property.location.city} - {property.location.state}
-            </span>
+            <span>{property.location.city}</span>
           </div>
           <Link
             href={`/properties/${property._id}`}

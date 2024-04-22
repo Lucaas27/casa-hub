@@ -14,7 +14,7 @@ const Hero = () => {
             <input
               type="text"
               id="location"
-              placeholder="Enter Location (City, County, PostCode, etc"
+              placeholder="Enter Location (City, County, PostCode, etc)"
               className="w-full rounded-lg bg-secondary px-4 py-3 text-secondary-foreground focus:outline-none focus:ring focus:ring-ring"
             />
           </div>
@@ -27,12 +27,11 @@ const Hero = () => {
               className="w-full rounded-lg bg-secondary px-4 py-3 text-secondary-foreground focus:outline-none focus:ring focus:ring-ring"
             >
               <option value="All">All</option>
-              <option value="Apartment">Apartment</option>
+              <option value="Flat or Apartment">Flat / Apartment</option>
               <option value="Studio">Studio</option>
-              <option value="Condo">Condo</option>
               <option value="House">House</option>
-              <option value="Cabin Or Cottage">Cabin or Cottage</option>
-              <option value="Loft">Loft</option>
+              <option value="Bungalow">Bungalow</option>
+              <option value="Commercial Property">Commercial Property</option>
               <option value="Room">Room</option>
               <option value="Other">Other</option>
             </select>

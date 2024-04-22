@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero';
 import InfoCards from '@/components/InfoCards';
-import HomeProperties from '../components/HomeProperties';
+import HomeProperties from '@/components/HomeProperties';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Hero />
@@ -10,4 +10,6 @@ export default function Home() {
       <HomeProperties />
     </>
   );
-}
+};
+
+export default Home;
