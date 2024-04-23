@@ -4,8 +4,9 @@ import '@/assets/styles/globals.css';
 import Navbar from '@/components/common/Navbar';
 import Providers from './providers';
 import Footer from '@/components/common/Footer';
+import { Poppins } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({ subsets: ['latin'], display: 'swap', weight: '400' });
 
 export const metadata: Metadata = {
   title: 'CasaHub | Find the perfect home',
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} flex min-h-screen flex-col`}>
+      <body className={`${poppins.className} flex min-h-screen flex-col`}>
         <Providers>
           <Navbar />
           <main className="flex-1">{children}</main>

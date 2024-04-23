@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: { '70/28': '70% 28%' },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

@@ -7,16 +7,5 @@
     "node_modules",
     "dist",
     "next-env.d.ts"
-  ],
-  "plugins": [
-    "prettier"
-  ],
-  "rules": {
-    "prettier/prettier": "error"
-  },
-  "parserOptions": {
-    "project": [
-      "./tsconfig.json"
-    ]
-  }
+  ]
 }
