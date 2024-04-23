@@ -1,4 +1,4 @@
-import PropertiesList from '@/components/PropertiesList';
+import PropertiesList from '@/components/properties/PropertiesList';
 import PropertiesPageSkeleton from '@/components/skeleton/PropertiesPageSkeleton';
 import { Suspense } from 'react';
 

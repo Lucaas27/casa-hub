@@ -1,4 +1,4 @@
-import PropertyCard from '@/components/PropertyCard';
+import PropertyCard from '@/components/common/PropertyCard';
 import Link from 'next/link';
 import IProperty from '@/interfaces/Property';
 import { fetchData } from '@/utils/requests';

@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import ThemeSwitch from './ThemeSwitch';
+import ThemeSwitch from '@/components/common/ThemeSwitch';
 import Image from 'next/image';
 import logo from '@/assets/images/logo-white.png';
 import { FaUserCircle } from 'react-icons/fa';
