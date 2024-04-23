@@ -1,9 +1,8 @@
 import connDB from '@/config/db';
 import Property from '@/models/Property';
-import type { NextApiRequest } from 'next';
 
 // GET /api/properties/:id
-export const GET = async (request: NextApiRequest, { params: { id } }: { params: { id: string } }) => {
+export const GET = async (request: Request, { params: { id } }: { params: { id: string } }) => {
   try {
     await connDB();
     const property = await Property.findById(id);

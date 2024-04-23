@@ -47,7 +47,7 @@ const PropertyInfo = ({ property }: { property: IProperty }) => {
   return (
     <section className="bg-primary-light">
       <div className="container px-6 py-10">
-        <div className="md:grid-cols-70/28 grid w-full grid-cols-1 gap-6">
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-70/28">
           <main>
             <div className="rounded-lg bg-white p-6 text-center shadow-md md:text-left">
               <div className="mb-4 text-muted-foreground">{property.type}</div>
