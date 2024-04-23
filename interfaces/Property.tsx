@@ -5,7 +5,7 @@ import ISellerInfo from './SellerInfo';
 export default interface IProperty {
   _id: string;
   owner: string;
-  name: string;
+  title: string;
   type: string;
   description: string;
   location: ILocation;

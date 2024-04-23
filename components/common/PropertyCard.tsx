@@ -7,11 +7,7 @@ import { GiBathtub } from 'react-icons/gi';
 import { FaRulerCombined } from 'react-icons/fa';
 import { BsCurrencyDollar } from 'react-icons/bs';
 
-interface PropertyCardProps {
-  property: IProperty;
-}
-
-const PropertyCard = ({ property }: PropertyCardProps) => {
+const PropertyCard = ({ property }: { property: IProperty }) => {
   const displayRate = () => {
     const {
       rates: { monthly, weekly, nightly },
@@ -46,11 +42,12 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
         width={0}
         sizes="100vw"
         className="h-auto w-full rounded-t-xl"
+        priority={true}
       />
       <div className="p-4">
         <div className="mb-6 text-left md:text-center lg:text-left">
           <div className="text-muted-foreground">{property.type}</div>
-          <h3 className="text-xl font-bold">{property.name}</h3>
+          <h3 className="text-xl font-bold">{property.title}</h3>
         </div>
         <h3 className="absolute right-[10px] top-[10px] rounded-lg bg-white px-4 py-2 text-right font-bold text-primary md:text-center lg:text-right">
           {displayRate()}
