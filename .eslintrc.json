@@ -8,5 +8,15 @@
     "dist",
     "next-env.d.ts"
   ],
-  "rules": {}
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  }
 }

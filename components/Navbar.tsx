@@ -29,7 +29,7 @@ const Navbar = () => {
                 className="relative inline-flex items-center justify-center rounded-md p-2 text-primary-foreground hover:bg-secondary hover:text-secondary-foreground focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ring"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
-                onClick={() => setMobileMenuOpen((prevState) => !prevState)}
+                onClick={() => setMobileMenuOpen(prevState => !prevState)}
               >
                 <span className="absolute -inset-0.5"></span>
                 <span className="sr-only">Open main menu</span>
@@ -106,7 +106,7 @@ const Navbar = () => {
                       id="user-menu-button"
                       aria-expanded="false"
                       aria-haspopup="true"
-                      onClick={() => setProfileMenuOpen((prevState) => !prevState)}
+                      onClick={() => setProfileMenuOpen(prevState => !prevState)}
                     >
                       <span className="absolute -inset-1.5"></span>
                       <span className="sr-only">Open user menu</span>

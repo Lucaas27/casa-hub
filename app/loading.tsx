@@ -1,7 +1,7 @@
 'use client';
 import { PulseLoader } from 'react-spinners';
 
-const Loading = ({ loading }: { loading: boolean }) => {
+const Loading = ({ loading }: { loading?: boolean }) => {
   const override = {
     display: 'flex',
     justifyContent: 'center',
