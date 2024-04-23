@@ -5,12 +5,12 @@ const PropertyCardSkeleton = () => {
     <article className="relative rounded-xl bg-secondary text-secondary-foreground shadow-md">
       <Skeleton height={210} />
       <div className="p-4">
-        <div className="mb-6 text-left md:text-center lg:text-left">
+        <div className="mb-6 ">
           <div className="text-start">
-            <Skeleton width={100} />
+            <Skeleton width={80} />
           </div>
           <h3 className="text-start">
-            <Skeleton width={300} />
+            <Skeleton width={150} />
           </h3>
         </div>
         <h3 className="absolute right-[10px] top-[10px] rounded-lg px-4 py-2 text-right font-bold text-primary md:text-center lg:text-right">
@@ -30,7 +30,7 @@ const PropertyCardSkeleton = () => {
         </div>
 
         <div className="mb-4 flex justify-center gap-4 text-sm text-secondary-foreground">
-          <Skeleton width={300} />
+          <Skeleton width={150} />
         </div>
 
         <div className="border-border-foreground mb-5 border"></div>

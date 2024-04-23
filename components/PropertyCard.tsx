@@ -84,7 +84,6 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
                 <span className="md:hidden lg:inline"> Toilet</span>
               </>
             )}
-            {/* <span className="md:hidden lg:inline"> Toilet(s)</span> */}
           </p>
           <p>
             <FaRulerCombined />
@@ -122,7 +121,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           </div>
           <Link
             href={`/properties/${property._id}`}
-            className="h-[36px] rounded-lg bg-primary px-4 py-2 text-center text-sm text-primary-foreground hover:bg-primary-light hover:text-primary-light-foreground"
+            className="h-[36px] rounded-lg bg-accent px-4 py-2 text-center text-sm text-accent-foreground hover:bg-primary hover:text-primary-foreground"
           >
             Details
           </Link>

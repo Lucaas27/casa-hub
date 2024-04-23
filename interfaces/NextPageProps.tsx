@@ -1,4 +1,4 @@
-export interface NextPageProps<SlugType = string> {
-  params: { slug: SlugType };
+export interface NextPageProps<T = string> {
+  params: { id: T };
   searchParams?: { [key: string]: string | string[] | undefined };
 }
